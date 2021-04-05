@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link herf="https://fonts.googleeapis.com/cs2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="C:\Users\91978\brigelab\pages\payrol.css">
+    <title>Employee Payroll Form</title>
+    <script defer src="../js/new_payroll_form.js"></script>
+</head>
+<body>
+    <!--- UC1 --->
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="../asserts/image/logo.png" alt="">
+            <div>
+                <span class="emp-text"> Employee</span>
+                <span class="emp-text emp-payroll">Payroll</span>
+            </div>
+        </div>
+    </header>
+    <div class="form-content">
+        <form class="form" action="#" onsubmit="save(event);return false">
+        <div class="form-head">Employee Payroll form </div>
+        <div class="row-content">
+            <label class="label text" for="name">Name</label>
+            <input class="input" type="text" id="name" name="name"
+            placeholder="Your name.." required>
+        </div>
+        
+    </div>
+    
+    <!-- uc 3 -->
+    <div class="row-content">
+        <label class="label text" for="profile">Profile image</label>
+        <div class="prfile-radio-content">
+            <label>
+                <input type="radio" id="profile1" name="profile"
+                value="../asserts/profile-image/ellipse -3.png" required>
+                <img class="profile" id='image1' src="../assets/profile-images/ellipes -3.png">
+            </label>
+            <label >
+                <input type="radio" id="profile2" name="profile"
+                value="./assets/profile-images/ellipse 1.png" required>
+                <img class="profile" id='image2' src="../assets/profile-image/ellipes -1.png">
+            </label>
+            <label>
+                <input type="radio" id="profile3" name="profile"
+                value="../assets/profile-images/ellipse -8.png" required>
+                <img class="profile" id='image3' src="../assets/profile-images/ellipes -8.png">
+            </label>
+            <input type="radio" id="profile4" name="profile"
+            value="../assets/profile-images/ellipse -7.png" required>
+            <img class="profile" id='image4' src="../assets/profile-images/ellipes -7.png">
+        </div>
+    </div>
+    <!--uc-4-->
+    <div class="row-content">
+        <label class="label text" for="gender">Gender</label>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label class="text" for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label class="text" for="female">female</label>
+        </div>
+    </div>
+    <div class="row-content">
+        <label class="label text" for="department">Department</label>
+        <div>
+            <input class="checkbox" type="checkbox" id="hr" name="hr" value="HR">
+            <label class="text" for="hr">HR</label>
+            <input class="checkbox" type="checkbox" id="sales" name="sales" value="SLAES">
+            <label class="text" for="sales">Sales</label>
+            <input class="checkbox" type="checkbox" id="finance" name="finance" value="FINANCE">
+            <label class="text" for="finance">Finance</label>
+            <input class="checkbox" type="checkbox" id="engineer" name="engineer" value="ENGINEER">
+            <label class="text" for="engineer">Engineer</label>
+            <input class="checkbox" type="checkbox" id="others" name="others" value="OTHERS">
+            <label class="text" for="others">Others</label>
+        </div>
+    </div>
+    <div class="row-content">
+        <label class="label text" for="salary">Choose your Salary:</label>
+        <input class="input" type="range" name="salary" min="30000"
+        max="50000" step="100" value="40000">
+        <output class="salary-output text" for="salary">40000</output>
+    </div>
+       <div class="row-content">
+        <label class="label text" for="startDate">start Date</label>
+        <div>
+            <select id="day" name="Day">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+                <option value="11"></option>
+                <option value="12"></option>
+                <option value="13"></option>
+                <option value="15"></option>
+                <option value="16"></option>
+                <option value="17"></option>
+                <option value="18"></option>
+                <option value="19"></option>
+                <option value="20"></option>
+                <option value="21"></option>
+                <option value="22"></option>
+                <option value="23"></option>
+                <option value="24"></option>
+                <option value="25"></option>
+                <option value="26"></option>
+                <option value="27"></option>
+                <option value="28"></option>
+                <option value="29"></option>
+                <option value="30"></option>
+            </select>
+            <select id="month" name="Month">
+            <option value="19"></option>
+                <option value="Jan"></option>
+                <option value="Feb"></option>
+                <option value="Mar"></option>
+                <option value="Apr"></option>
+                <option value="May"></option>
+                <option value="June"></option>
+                <option value="July"></option>
+                <option value="Aug"></option>
+                <option value="Sep"></option>
+                <option value="Oct"></option>
+                <option value="Nov"></option>
+                <option value="Dec"></option>
+            </select>
+            <select id="month" name="Month">
+                <option value="2020"></option>
+                <option value="2019"></option>
+                <option value="2018"></option>
+                <option value="2017"></option>
+                <option value="2016"></option>
+                <option value="2015"></option>
+            </select>
+        </div>
+    </div>
+    <div class="row-content">
+        <label class="label text" for="notes">Notes</label>
+        <textarea id="notes" class="input" name="Notes" placeholder="" style="height:100px"></textarea> 
+    </div>
+    <div class="buttonParent">
+        <a href="./home.html" class="resetButton button cancelButton">Cancel</a>
+    <div class="submit-reset">
+        <button type="submit" class="button submitButton" id="submitbutton">Submit</button>
+        <button type="reset" class="resetButton button">Reset</button>
+    </div>
+    </div>
+</form>
+
+</body>
+</html>
